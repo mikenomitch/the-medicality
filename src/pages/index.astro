@@ -7,44 +7,323 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <div class="media-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=2000&q=80" alt="Luxury hospitality-inspired healthcare suite placeholder" />
+          <div class="placeholder-badge">Video placeholder</div>
+        </div>
+        <div class="hero-content">
+          <p class="section-heading">Luxury hospitality meets healthcare</p>
+          <h1>Five-Star Hospitality for Healthcare</h1>
+          <p class="lead">
+            Transforming patient care with ultra-luxury service standards, embedded expertise, and measurable outcomes for modern health systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Schedule a Consultation</a>
+            <a class="btn btn-secondary" href="#difference">Discover the Difference</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight">
+              <span class="label">On-site partnership</span>
+              <strong>6–12 months</strong>
+              <small>Embedded advisors alongside your teams</small>
+            </div>
+            <div class="highlight">
+              <span class="label">Experience metrics</span>
+              <strong>CSAT + HCAHPS</strong>
+              <small>Luxury-grade service protocols tailored to your goals</small>
+            </div>
+            <div class="highlight">
+              <span class="label">For leaders</span>
+              <strong>CEOs & C-Suite</strong>
+              <small>Board-ready narratives and measurable ROI</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro">
+        <div class="section-grid">
+          <div>
+            <p class="section-heading">Patient experience reimagined</p>
+            <h2>Welcome to The Medicality</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              The Medicality is a patient care consulting firm that blends the art of luxury hospitality with the science of healthcare. We partner with hospitals to transform traditional clinical environments into five-star, patient-centered experiences.
+            </p>
+            <p>
+              By leveraging world-class service principles from ultra-luxury hotels, we elevate every touchpoint—from first contact through post-discharge follow-up—while empowering caregivers. Exceptional care, delivered with gracious service, becomes the standard your patients and teams feel every day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="difference" class="section difference">
+        <div class="section-header">
+          <p class="section-heading">What sets us apart</p>
+          <h2>The Medicality Difference</h2>
+          <p class="subhead">We immerse in your culture, working beside your teams to build sustainable, measurable change.</p>
+        </div>
+        <div class="grid diff-grid">
+          <div class="card diff-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c4.418 0 8 2.91 8 6.5C20 16 12 21 12 21S4 16 4 9.5C4 5.91 7.582 3 12 3Z"/><path d="M9.5 9.5a2.5 2.5 0 1 0 5 0"/></svg>
+            </div>
+            <h3>Dual focus on people</h3>
+            <p>
+              We elevate patient satisfaction by first uplifting your care teams. Employee morale and culture become the foundation for consistent five-star service at every level.
+            </p>
+          </div>
+          <div class="card diff-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M8 7h13M8 12h13M8 17h13M5 7.01l.01-.011M5 12.01l.01-.011M5 17.01l.01-.011"/></svg>
+            </div>
+            <h3>Embedded transformation</h3>
+            <p>
+              Our experts embed within your hospital for 6–12 months, implementing systems and behaviors in real time. We become part of your team to deliver durable cultural change.
+            </p>
+          </div>
+          <div class="card diff-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 9.5 9 13l5.5-7 4 9 2-4"/><path d="M3 6v12a1 1 0 0 0 1 1h16"/></svg>
+            </div>
+            <h3>Five-star service standards</h3>
+            <p>
+              We infuse proven hospitality protocols into clinical care—from personalized greetings to immediate service recovery—raising satisfaction scores and loyalty.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="section-header">
+          <p class="section-heading">What we do</p>
+          <h2>Services for visionary health leaders</h2>
+          <p class="subhead">Comprehensive consulting that aligns patient experience, culture, and operations.</p>
+        </div>
+        <div class="grid service-grid">
+          <div class="card service-card">
+            <div class="service-icon">⟡</div>
+            <h3>Hospitality-inspired process redesign</h3>
+            <p>
+              We overhaul key processes from pre-arrival to post-discharge, layering luxury hospitality best practices into every step of the patient journey.
+            </p>
+          </div>
+          <div class="card service-card">
+            <div class="service-icon">✦</div>
+            <h3>Empathy-driven staff training</h3>
+            <p>
+              Organization-wide coaching for executives and frontline caregivers focused on empathy, communication, and service excellence that endures.
+            </p>
+          </div>
+          <div class="card service-card">
+            <div class="service-icon">⬢</div>
+            <h3>Employee experience consulting</h3>
+            <p>
+              We strengthen the employee lifecycle—hiring through growth—so caregivers feel valued, stay longer, and deliver extraordinary care.
+            </p>
+          </div>
+        </div>
+        <div class="cta-banner">
+          <div>
+            <h3>Ready to bring five-star service to your hospital?</h3>
+            <p>Let’s craft a bespoke roadmap tailored to your culture, leadership vision, and patient promise.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Start the conversation</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <p class="section-heading">Contact us</p>
+          <h2>Start the transformation</h2>
+          <p class="subhead">Ready to elevate your patient experience? Let’s discuss how The Medicality can bring five-star service to your organization.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="card contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="name@organization.com" required />
+            </label>
+            <label>
+              <span>Organization</span>
+              <input type="text" name="organization" placeholder="Hospital or health system" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Share your goals"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="privacy">We will never share your information. We respond within one business day.</p>
+          </form>
+          <div class="card contact-details">
+            <h3>Direct contact</h3>
+            <p>Email: <a href="mailto:info@themedicality.com">info@themedicality.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Office: 1800 Meridian Ave, Suite 12, Your City</p>
+            <div class="contact-note">Prefer a personal welcome? We’ll meet you on-site to map the journey together.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  .hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: stretch;
+    gap: 1.75rem;
+    padding: clamp(2rem, 6vw, 3.5rem) 0 clamp(3rem, 8vw, 5rem);
+  }
+
+  .hero-media {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 360px;
+    box-shadow: 0 18px 48px rgba(20, 18, 14, 0.18);
+    isolation: isolate;
+  }
+
+  .hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.78);
+    display: block;
+  }
+
+  .media-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(12, 12, 12, 0.45), rgba(12, 12, 12, 0.25));
+    z-index: 1;
+  }
+
+  .placeholder-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 0.5rem 0.9rem;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fffaf1;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    z-index: 2;
+    backdrop-filter: blur(6px);
+  }
+
+  .hero-content { align-self: center; max-width: 640px; }
+
+  .lead { font-size: 1.2rem; color: rgba(43, 46, 52, 0.82); }
+
+  .hero-actions { display: flex; align-items: center; gap: 0.75rem; margin: 1.2rem 0 1.6rem; flex-wrap: wrap; }
+
+  .hero-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.9rem; }
+
+  .highlight {
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(22, 24, 26, 0.06);
+    backdrop-filter: blur(4px);
+  }
+
+  .highlight .label { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.72rem; color: rgba(43, 46, 52, 0.6); }
+  .highlight strong { display: block; margin: 0.35rem 0 0.2rem; font-size: 1.1rem; }
+  .highlight small { color: rgba(43, 46, 52, 0.7); }
+
+  .intro .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; align-items: start; }
+  .intro-copy { font-size: 1.05rem; color: rgba(43, 46, 52, 0.82); }
+
+  .section-header { max-width: 780px; margin: 0 0 2rem; }
+  .section-header .subhead { color: rgba(43, 46, 52, 0.7); font-size: 1.05rem; }
+
+  .diff-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+  .diff-card { display: grid; gap: 0.75rem; }
+
+  .icon-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(181, 138, 56, 0.12);
+    color: #8a671f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  }
+
+  .icon-circle svg { width: 26px; height: 26px; }
+
+  .services { padding-bottom: clamp(3rem, 8vw, 6.5rem); }
+  .service-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+  .service-card { display: grid; gap: 0.75rem; align-content: start; }
+  .service-icon { font-size: 1.4rem; color: #8a671f; background: rgba(181, 138, 56, 0.12); width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+
+  .cta-banner {
+    margin-top: 2.2rem;
+    padding: 1.8rem 1.6rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(181, 138, 56, 0.1), rgba(181, 138, 56, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-banner h3 { margin: 0 0 0.25rem; }
+  .cta-banner p { margin: 0; color: rgba(43, 46, 52, 0.75); }
+
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+
+  .contact-form label { display: grid; gap: 0.35rem; font-weight: 600; color: rgba(43, 46, 52, 0.8); }
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 12px;
+    border: 1px solid rgba(22, 24, 26, 0.12);
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-family: 'Inter', system-ui;
+    background: #fffdfa;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: rgba(181, 138, 56, 0.8);
+    box-shadow: 0 0 0 3px rgba(181, 138, 56, 0.16);
+  }
+
+  .contact-form button { margin-top: 0.4rem; width: fit-content; }
+  .contact-form .privacy { margin: 0.6rem 0 0; font-size: 0.95rem; color: rgba(43, 46, 52, 0.65); }
+
+  .contact-details { display: grid; gap: 0.4rem; font-size: 1.02rem; }
+  .contact-details a { color: #0f172a; font-weight: 600; }
+  .contact-note { margin-top: 0.6rem; padding: 1rem; border-radius: 12px; background: rgba(181, 138, 56, 0.08); color: rgba(43, 46, 52, 0.85); }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+  }
+</style>
