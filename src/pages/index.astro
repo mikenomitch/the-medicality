@@ -7,44 +7,425 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" role="presentation" aria-hidden="true"></div>
+        <div class="hero__overlay">
+          <p class="eyebrow">Concierge-Caliber Healthcare</p>
+          <h1 id="hero-title">Five-Star Hospitality for Healthcare</h1>
+          <p class="lead">
+            Transforming patient care with ultra-luxury service standards, embedded expertise, and the calm confidence of
+            a world-class hotel.
+          </p>
+          <div class="hero__actions">
+            <a class="btn primary" href="#contact">Contact Us</a>
+            <a class="btn ghost" href="#intro">Learn More</a>
+          </div>
+          <p class="note">Video placeholder shown to respect performance and privacy.</p>
+        </div>
+      </section>
+
+      <section id="intro" class="panel intro">
+        <div class="panel__header">
+          <p class="eyebrow">Patient Experience Reimagined</p>
+          <h2>Welcome to The Medicality</h2>
+        </div>
+        <p class="panel__text">
+          The Medicality is a patient care consulting firm that blends the art of luxury hospitality with the science of
+          healthcare. We partner with hospitals to transform traditional clinical environments into five-star,
+          patient-centered experiences. By leveraging world-class service principles from ultra-luxury hotels, we help
+          healthcare leaders elevate every aspect of the patient journey—while empowering caregivers. Exceptional care
+          delivered with unparalleled service becomes your new standard.
+        </p>
+      </section>
+
+      <section id="difference" class="panel difference">
+        <div class="panel__header">
+          <p class="eyebrow">Our Promise</p>
+          <h2>The Medicality Difference</h2>
+          <p class="panel__subhead">
+            We immerse within your culture to redefine service from the inside out—no generic reports, only living,
+            breathing transformation.
+          </p>
+        </div>
+        <div class="grid trio">
+          <article class="card sketch">
+            <div class="card__icon" aria-hidden="true">♡</div>
+            <h3>Dual Focus on People</h3>
+            <p>
+              We elevate patient satisfaction by uplifting your care teams first. When employees feel supported and valued,
+              five-star service becomes effortless and consistent.
+            </p>
+          </article>
+          <article class="card sketch">
+            <div class="card__icon" aria-hidden="true">∞</div>
+            <h3>Embedded Transformation</h3>
+            <p>
+              Our experts embed within your hospital for 6–12 months, working hand-in-hand with staff to implement systems,
+              behaviors, and documentation that endure.
+            </p>
+          </article>
+          <article class="card sketch">
+            <div class="card__icon" aria-hidden="true">✦</div>
+            <h3>Five-Star Service Standards</h3>
+            <p>
+              We translate proven ultra-luxury hotel protocols into clinical care—from personalized greetings to immediate
+              service recovery—so patients and leadership feel the difference.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="panel services">
+        <div class="panel__header">
+          <p class="eyebrow">What We Do</p>
+          <h2>Services Designed for Hospital Leaders</h2>
+          <p class="panel__subhead">Comprehensive consulting to transform patient experience and workplace culture.</p>
+        </div>
+        <div class="grid trio">
+          <article class="card lined">
+            <div class="card__meta">Process Redesign</div>
+            <h3>Hospitality-Inspired Process Redesign</h3>
+            <p>
+              We overhaul the patient journey from pre-arrival to post-discharge, infusing hospitality rituals at every
+              step for calm, confidence, and clarity.
+            </p>
+          </article>
+          <article class="card lined">
+            <div class="card__meta">Staff Training</div>
+            <h3>Empathy-Driven Staff Training</h3>
+            <p>
+              Organization-wide coaching for executives and frontline caregivers focused on empathy, communication, and
+              polished service delivery.
+            </p>
+          </article>
+          <article class="card lined">
+            <div class="card__meta">Employee Experience</div>
+            <h3>Employee Experience Consulting</h3>
+            <p>
+              We refine hiring, onboarding, and growth practices to build a culture where caregivers feel valued—and where
+              exceptional care is the natural result.
+            </p>
+          </article>
+        </div>
+        <div class="cta-banner sketch">
+          <div>
+            <p class="eyebrow">Ready to begin?</p>
+            <h3>Bring five-star service to your hospital.</h3>
+          </div>
+          <a class="btn primary" href="#contact">Schedule a Consultation</a>
+        </div>
+      </section>
+
+      <section id="contact" class="panel contact">
+        <div class="panel__header">
+          <p class="eyebrow">Start the Transformation</p>
+          <h2>Contact Us</h2>
+          <p class="panel__subhead">
+            Ready to elevate your patient experience? Let’s discuss how The Medicality can bring five-star service to your
+            organization.
+          </p>
+        </div>
+        <div class="contact__grid">
+          <form class="form sketch" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Organization
+              <input type="text" name="organization" placeholder="Hospital or health system" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p class="privacy">We will never share your information. We respond within one business day.</p>
+          </form>
+          <div class="contact__details">
+            <div class="card lined">
+              <div class="card__meta">Direct Contact</div>
+              <h3>Prefer to reach out directly?</h3>
+              <ul>
+                <li><strong>Email:</strong> info@themedicality.com</li>
+                <li><strong>Phone:</strong> (555) 212-7789</li>
+                <li><strong>Office:</strong> 188 Quiet Harbor Lane, Suite 12</li>
+              </ul>
+              <p class="handnote">We are delighted to meet in person or virtually—whatever feels most comfortable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  :global(body) {
+    background-image: linear-gradient(180deg, rgba(37, 51, 74, 0.06) 0, rgba(37, 51, 74, 0) 160px);
+  }
+
+  .hero {
+    position: relative;
+    min-height: 78vh;
+    display: grid;
+    align-items: center;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--soft-shadow), inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2.5rem;
+    isolation: isolate;
+  }
+
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(37, 51, 74, 0.75), rgba(123, 96, 61, 0.55)),
+      url('/hero-placeholder.svg') center/cover;
+    filter: grayscale(0.2) saturate(0.6);
+    opacity: 0.9;
+  }
+
+  .hero__overlay {
+    position: relative;
+    max-width: 650px;
+    padding: 4rem 3rem;
+    color: #f8f5ef;
+    backdrop-filter: blur(2px);
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: rgba(248, 243, 235, 0.88);
+  }
+
+  .lead {
+    font-size: 1.1rem;
+    margin: 0 0 1.25rem 0;
+    color: rgba(248, 243, 235, 0.9);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px dashed rgba(248, 243, 235, 0.6);
+    color: inherit;
+    transition: all 0.2s ease;
+    background: transparent;
+    text-decoration: none;
+  }
+
+  .btn.primary {
+    background: rgba(248, 243, 235, 0.92);
+    color: var(--accent-ink);
+    border-color: transparent;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  }
+
+  .btn.primary:hover {
+    background: #fffdf8;
+    transform: translateY(-1px);
+  }
+
+  .btn.ghost {
+    color: #f8f5ef;
+    border-color: rgba(248, 243, 235, 0.5);
+  }
+
+  .btn.ghost:hover {
+    border-color: #f8f5ef;
+    background: rgba(248, 243, 235, 0.08);
+  }
+
+  .note {
+    font-size: 0.9rem;
+    color: rgba(248, 243, 235, 0.8);
+    margin: 0;
+    font-style: italic;
+  }
+
+  .panel {
+    padding: 2.75rem 0;
+    position: relative;
+  }
+
+  .panel + .panel {
+    border-top: 1px dashed rgba(37, 51, 74, 0.18);
+  }
+
+  .panel__header {
+    max-width: 760px;
+    margin-bottom: 1.75rem;
+  }
+
+  .panel__subhead {
+    color: rgba(38, 33, 28, 0.7);
+    max-width: 640px;
+    margin: 0;
+  }
+
+  .panel__text {
+    max-width: 960px;
+    font-size: 1.05rem;
+  }
+
+  .grid.trio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: var(--soft-shadow);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card__icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-ink);
+    text-shadow: 0 6px 20px rgba(37, 51, 74, 0.2);
+  }
+
+  .card__meta {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.82rem;
+    color: rgba(38, 33, 28, 0.65);
+    margin-bottom: 0.35rem;
+  }
+
+  .sketch {
+    background: linear-gradient(135deg, rgba(123, 96, 61, 0.06) 0%, rgba(37, 51, 74, 0.03) 100%);
+    border: 1px dashed var(--stroke);
+  }
+
+  .lined {
+    border: 1px solid rgba(37, 51, 74, 0.18);
+    background-image: linear-gradient(
+      180deg,
+      rgba(37, 51, 74, 0.08),
+      rgba(37, 51, 74, 0.08) 1px,
+      transparent 1px,
+      transparent 34px
+    );
+    background-size: 100% 34px;
+  }
+
+  .cta-banner {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-banner h3 {
+    margin: 0;
+  }
+
+  .contact__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .form label {
+    display: block;
+    font-weight: 600;
+    color: rgba(38, 33, 28, 0.8);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    margin-top: 0.35rem;
+    border-radius: 12px;
+    border: 1px dashed rgba(37, 51, 74, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: border 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .form input:focus,
+  .form textarea:focus {
+    outline: none;
+    border-color: var(--accent-ink);
+    box-shadow: 0 0 0 4px rgba(37, 51, 74, 0.07);
+  }
+
+  .form .btn {
+    margin-top: 0.5rem;
+    width: 100%;
+    border-color: transparent;
+  }
+
+  .privacy {
+    font-size: 0.9rem;
+    color: rgba(38, 33, 28, 0.6);
+    margin-top: 0.5rem;
+  }
+
+  .contact__details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+
+  .contact__details li + li {
+    margin-top: 0.4rem;
+  }
+
+  .handnote {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(38, 33, 28, 0.75);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  @media (max-width: 720px) {
+    .hero__overlay {
+      padding: 3rem 1.75rem;
+    }
+
+    .cta-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
