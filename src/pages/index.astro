@@ -80,6 +80,52 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>
       </section>
 
+      <section id="approach" class="panel approach">
+        <div class="panel__header">
+          <p class="eyebrow">Our Approach</p>
+          <h2>Strategic and tactical guidance that puts patients first</h2>
+          <p class="panel__subhead">
+            We blend luxury hospitality playbooks with behavioral psychology to build a service-first culture that uplifts
+            patients, employees, and ownership alike.
+          </p>
+        </div>
+        <div class="grid duo">
+          <article class="card sketch">
+            <div class="card__meta">Strategic Approach</div>
+            <h3>Patient-first by design</h3>
+            <ol class="approach-list">
+              <li>Apply proven ultra-luxury hotel methods and behavioral psychology to create a patient-first mindset.</li>
+              <li>Secure buy-in from leadership through frontline staff to build a strong service culture that treats patients and employees as customers.</li>
+              <li>Center on the principle that well-cared-for employees deliver superior service and performance.</li>
+              <li>
+                Serve ownership, patients, and employees equally well, measuring success by:
+                <ol class="approach-sublist">
+                  <li>Hospital ownership: asset value and profitability.</li>
+                  <li>Patients: satisfaction scores, impact on outcomes, and post-stay social posts.</li>
+                  <li>Employees: turnover rate and satisfaction survey scores.</li>
+                </ol>
+              </li>
+            </ol>
+          </article>
+          <article class="card sketch">
+            <div class="card__meta">Tactical Approach</div>
+            <h3>Embedded, measurable transformation</h3>
+            <ol class="approach-list">
+              <li>Embed within hospital operations with full access to understand current-state realities.</li>
+              <li>Track patient satisfaction and emotional status alongside medical charts for a holistic view.</li>
+              <li>Audit HR processes end-to-end to attract, train, motivate, and retain the right people.</li>
+              <li>Coach leaders, clinicians, and service teams to model “service first” behaviors for patients and employees.</li>
+              <li>Strengthen pre-arrival communication, in-hospital touchpoints, discharge, and post-stay follow-up.</li>
+              <li>Respond immediately to patient and employee issues so concerns are resolved before discharge.</li>
+              <li>Hold regular management huddles to map daily and weekly consultant activities.</li>
+              <li>Host employee forums to surface improvement opportunities from those closest to care.</li>
+              <li>Measure impact on profit, patient scores (HCAHPS/Press Ganey), turnover, and employee satisfaction.</li>
+              <li>Operate with compassion, patience, warmth, sensitivity, and visible care for the institution.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
       <section id="services" class="panel services">
         <div class="panel__header">
           <p class="eyebrow">What We Do</p>
@@ -187,12 +233,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <div class="profile__content">
               <h3>Jim Treadway</h3>
               <p>
-                Jim Treadway is a third generation hotelier, whose lodging roots began with Treadway Inns in New England.
-                He attended Dartmouth College, served in the Marine Corps, and later graduated from Cornell University in
-                Hotel Administration. Treadway worked with Westin Hotels &amp; Resorts for 23 years, the last five of which as
-                President of the North American Division. Following Westin, he founded and chaired the former MTM Luxury
-                Lodging, which Benchmark Hospitality purchased in 2011. He then served as Vice Chairman of Benchmark
-                Hospitality, Inc.and as General Manager at the world-renowned Bardessono.
+                Jim Treadway is a lifelong hotelier – operator, developer, and consultant. Former President of Westin
+                Hotels &amp; Resorts North America and then Founder and CEO of Allegis LLC, dba MTM Luxury Lodging and FST
+                Asset Management. His specialty is developing and operating luxury, full-service hotels with
+                extraordinary customer service, resulting in industry-leading market share and financial performance.
+                Treadway has consulted in hospitality as well as health care, including presentations to Stanford, UCSF,
+                and Houston Methodist. He’s successfully “connected the dots” between employee satisfaction, productivity,
+                guest/patient satisfaction, and profitability.
               </p>
             </div>
           </article>
@@ -207,8 +254,32 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <div class="profile__content">
               <h3>Michelle Kliot</h3>
               <p>
-                Michel Kliot, MD, is a professor in the Department of Neurological Surgery, a neurological surgeon at
-                Northwestern Memorial Hospital and an expert in peripheral nerve disorders.
+                Dr. Michel Kliot earned dual degrees from Harvard and a Yale medical degree, with neurobiology research
+                at Stanford. He trained at Columbia and completed a neurosurgical residency at the Neurological Institute
+                of New York before peripheral nerve fellowships in Toronto and at LSU. Kliot built and led peripheral
+                nerve programs at the University of Washington, UCSF, Northwestern, and Stanford, pioneering imaging and
+                surgical techniques. Now semiretired, he continues to teach, lecture, and mentor while championing
+                patient-centered care and innovation.
+              </p>
+            </div>
+          </article>
+          <article class="card sketch profile">
+            <img
+              class="profile__photo"
+              src="https://www.myprivia.com/sites/default/files/styles/provider_landing_200x200_/public/2024-05/kysma_Kamal_Singh.jpg?itok=PbpnoN6S"
+              alt="Portrait of Kamal Singh"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="profile__content">
+              <h3>Kamal Singh</h3>
+              <p>
+                Dr. Kamal Singh is an internal medicine physician who built a thriving 25-year solo practice in Southern
+                Kentucky while embracing the shift to value-based care. He designed clinical and operational systems that
+                align provider incentives with patient wellness, leading his ACO to top national MIPS scores. As chairman
+                and chief medical officer for a multistate network, he replicates that success at scale with resilient,
+                profitable models. Singh focuses on translating patient experience into measurable returns and is excited
+                to advance that mission with The Medicality team.
               </p>
             </div>
           </article>
@@ -252,6 +323,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     color: #f8f5ef;
     backdrop-filter: blur(2px);
     text-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero__overlay h1 {
+    color: #fff;
+    text-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
   }
 
   .eyebrow {
@@ -377,6 +453,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-size: 0.82rem;
     color: rgba(38, 33, 28, 0.65);
     margin-bottom: 0.35rem;
+  }
+
+  .approach-list {
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.6rem;
+    color: rgba(38, 33, 28, 0.85);
+    margin: 0;
+  }
+
+  .approach-sublist {
+    padding-left: 1.1rem;
+    margin-top: 0.4rem;
+    display: grid;
+    gap: 0.4rem;
   }
 
   .sketch {
