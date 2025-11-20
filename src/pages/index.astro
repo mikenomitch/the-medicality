@@ -82,26 +82,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <section id="approach" class="panel approach">
         <div class="panel__header">
           <p class="eyebrow">Our Approach</p>
-          <h2>Strategic and tactical guidance that celebrates patients and practitioners</h2>
+          <h2>Strategic and tactical guidance that puts patients first</h2>
           <p class="panel__subhead">
             We blend luxury hospitality playbooks with behavioral psychology to build a service-first culture that uplifts
-            care teams, delights patients, and strengthens ownership confidence.
+            patients, employees, and ownership alike.
           </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <div class="card__meta">Strategic Approach</div>
-            <h3>Balanced satisfaction by design</h3>
+            <h3>Patient-first by design</h3>
             <ol class="approach-list">
-              <li>Apply proven ultra-luxury hotel methods and behavioral psychology to build mutual trust between patients and practitioners.</li>
-              <li>Secure buy-in from leadership through frontline staff to nurture a service culture that treats everyone as valued guests.</li>
-              <li>Center on the principle that supported teams deliver superior care, confidence, and communication.</li>
+              <li>Apply proven ultra-luxury hotel methods and behavioral psychology to create a patient-first mindset.</li>
+              <li>Secure buy-in from leadership through frontline staff to build a strong service culture that treats patients and employees as customers.</li>
+              <li>Center on the principle that well-cared-for employees deliver superior service and performance.</li>
               <li>
                 Serve ownership, patients, and employees equally well, measuring success by:
                 <ol class="approach-sublist">
                   <li>Hospital ownership: asset value and profitability.</li>
                   <li>Patients: satisfaction scores, impact on outcomes, and post-stay social posts.</li>
-                  <li>Practitioners: turnover rate, satisfaction survey scores, and team stability.</li>
+                  <li>Employees: turnover rate and satisfaction survey scores.</li>
                 </ol>
               </li>
             </ol>
@@ -116,6 +116,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               <li>Coach leaders, clinicians, and service teams to model “service first” behaviors for patients and employees.</li>
               <li>Strengthen pre-arrival communication, in-hospital touchpoints, discharge, and post-stay follow-up.</li>
               <li>Respond immediately to patient and employee issues so concerns are resolved before discharge.</li>
+              <li>Hold regular management huddles to map daily and weekly consultant activities.</li>
               <li>Host employee forums to surface improvement opportunities from those closest to care.</li>
               <li>Measure impact on profit, patient scores (HCAHPS/Press Ganey), turnover, and employee satisfaction.</li>
               <li>Operate with compassion, patience, warmth, sensitivity, and visible care for the institution.</li>
@@ -404,12 +405,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-size: 1.05rem;
   }
 
-  .approach {
-    background: linear-gradient(180deg, rgba(123, 96, 61, 0.04), rgba(37, 51, 74, 0));
-    border-radius: var(--radius);
-    padding: 3rem 1rem 3.5rem;
-  }
-
   .grid.duo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -447,12 +442,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .approach-list {
-    list-style: none;
-    counter-reset: step;
-    padding: 0;
+    padding-left: 1.1rem;
     display: grid;
-    gap: 0.75rem;
-    color: rgba(38, 33, 28, 0.9);
+    gap: 0.6rem;
+    color: rgba(38, 33, 28, 0.85);
     margin: 0;
   }
 
@@ -461,68 +454,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     margin-top: 0.4rem;
     display: grid;
     gap: 0.4rem;
-  }
-
-  .approach-list > li {
-    position: relative;
-    padding: 0.65rem 0.75rem 0.65rem 2.75rem;
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(37, 51, 74, 0.08);
-  }
-
-  .approach-list > li::before {
-    counter-increment: step;
-    content: counter(step);
-    position: absolute;
-    left: 0.9rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
-    border-radius: 12px;
-    background: rgba(123, 96, 61, 0.12);
-    color: var(--accent-ink);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    box-shadow: inset 0 0 0 1px rgba(123, 96, 61, 0.3);
-  }
-
-  .approach .card {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(248, 243, 235, 0.94));
-    border: 1px solid rgba(37, 51, 74, 0.1);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
-    overflow: hidden;
-    position: relative;
-  }
-
-  .approach .card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 15% 20%, rgba(123, 96, 61, 0.08), transparent 40%),
-      radial-gradient(circle at 80% 0%, rgba(37, 51, 74, 0.07), transparent 35%);
-    pointer-events: none;
-    opacity: 0.9;
-    z-index: 0;
-  }
-
-  .approach .card > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .approach .card__meta {
-    color: var(--accent-ink);
-    font-weight: 700;
-  }
-
-  .approach h3 {
-    margin-top: 0;
   }
 
   .sketch {
