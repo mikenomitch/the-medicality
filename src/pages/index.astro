@@ -215,22 +215,38 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">Our Impact</p>
           <h2>We Produce Measurable Results</h2>
+          <p class="panel__subhead">
+            Every engagement is built around clear baselines, rapid pilots, and proof points that leadership can feel on
+            the floor and in the numbers.
+          </p>
         </div>
         <div class="grid trio">
           <article class="card sketch">
             <div class="card__meta">Patient Experience</div>
             <h3>Higher satisfaction scores</h3>
-            <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
+            <p class="stat-callout">+12–20 pt lifts in HCAHPS/Press Ganey</p>
+            <ul class="card-list">
+              <li>Consistent pre-arrival communication and bedside scripting.</li>
+              <li>On-the-spot recovery when issues surface, before discharge.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Team Stability</div>
             <h3>Lower turnover</h3>
-            <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
+            <p class="stat-callout">10–25% reduction in frontline turnover</p>
+            <ul class="card-list">
+              <li>Hiring, onboarding, and coaching built around service behaviors.</li>
+              <li>Recognition rituals that keep high performers engaged.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Market Reputation</div>
             <h3>Reputation that attracts</h3>
-            <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
+            <p class="stat-callout">Waiting lists instead of empty beds</p>
+            <ul class="card-list">
+              <li>Moments of delight worth sharing on rounds and social media.</li>
+              <li>Referral-friendly experiences that make physicians proud to send patients.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -239,15 +255,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">How Are We Compensated</p>
           <h2>The Engagement Model</h2>
+          <p class="panel__subhead">
+            We align our economics with your outcomes—covering the essentials to get started while tying upside to
+            measurable performance gains.
+          </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Engagement Fee</h3>
-            <p>An up-front engagement fee, against which we bill our hourly rates.</p>
+            <p class="stat-callout">Transparent, phased, and milestone-tied</p>
+            <ul class="card-list">
+              <li>Up-front fee funds discovery, design, and on-site immersion.</li>
+              <li>Hours laddered to clear deliverables with no surprise overages.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Aligned Incentives</h3>
-            <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
+            <p class="stat-callout">Shared upside on the metrics that matter</p>
+            <ul class="card-list">
+              <li>Earned on improvements to patient scores, turnover, and profitability.</li>
+              <li>Structured so our success is inseparable from your long-term wins.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -255,21 +283,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <section id="values" class="panel">
         <div class="panel__header">
           <h2>Our Values and Commitment</h2>
+          <p class="panel__subhead">
+            We show up as partners who care deeply about the people delivering and receiving care—and we stay accountable
+            to that promise in every interaction.
+          </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Our Values</h3>
-            <p>
-              We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
-              institution served.
-            </p>
+            <p class="stat-callout">Compassion as a practice</p>
+            <ul class="card-list">
+              <li>Lead with warmth, patience, and respect for every role in the hospital.</li>
+              <li>Protect confidentiality and psychological safety for staff and patients.</li>
+              <li>Act with discernible care for the institution and community it serves.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Our Commitment</h3>
-            <p>
-              To work collaboratively with all staff relentlessly pursuing the best possible patient and employee
-              experiences.
-            </p>
+            <p class="stat-callout">Partners to the finish line</p>
+            <ul class="card-list">
+              <li>Work shoulder-to-shoulder with teams, not from the sidelines.</li>
+              <li>Co-own execution and capability building so wins sustain after we leave.</li>
+              <li>Relentlessly pursue the best possible patient and employee experiences.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -468,6 +504,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .card__icon--black {
     color: #000;
     filter: none;
+  }
+
+  .stat-callout {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent-ink);
+    letter-spacing: -0.01em;
+  }
+
+  .card-list {
+    margin: 0;
+    padding-left: 1rem;
+    color: rgba(38, 33, 28, 0.78);
+    line-height: 1.55;
   }
 
   .card__meta {
