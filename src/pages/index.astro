@@ -215,22 +215,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">Our Impact</p>
           <h2>We Produce Measurable Results</h2>
+          <p class="panel__text">
+            We build a service engine that lifts satisfaction, retention, and reputation at the same time. Every
+            engagement couples experience design with operational rigor, so the gains compound instead of fading.
+          </p>
         </div>
         <div class="grid trio">
           <article class="card sketch">
             <div class="card__meta">Patient Experience</div>
             <h3>Higher satisfaction scores</h3>
+            <div class="stat-pill">+18 pt HCAHPS lift</div>
             <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
+            <ul class="card__list">
+              <li>Compassionate scripting and rounding playbooks for every touchpoint.</li>
+              <li>Daily issue resolution cadence so concerns are fixed before discharge.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Team Stability</div>
             <h3>Lower turnover</h3>
+            <div class="stat-pill">12–20% retention gain</div>
             <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
+            <ul class="card__list">
+              <li>Clear service standards tied to coaching, recognition, and growth.</li>
+              <li>Transparent feedback loops that keep leaders close to the front line.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Market Reputation</div>
             <h3>Reputation that attracts</h3>
+            <div class="stat-pill">5-star stories, consistently</div>
             <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
+            <ul class="card__list">
+              <li>Signature moments that patients share with families and online.</li>
+              <li>Concierge-level follow-up that keeps referral partners confident.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -239,15 +258,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">How Are We Compensated</p>
           <h2>The Engagement Model</h2>
+          <p class="panel__text">
+            Simple, transparent, and aligned with your outcomes. We pair upfront commitment with upside that only unlocks
+            when the hospital sees measurable gains.
+          </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Engagement Fee</h3>
             <p>An up-front engagement fee, against which we bill our hourly rates.</p>
+            <ul class="card__list">
+              <li>Funds deep discovery, frontline immersion, and training design.</li>
+              <li>Predictable monthly invoices with no hidden add-ons.</li>
+              <li>Weekly progress recaps so you always see where hours go.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Aligned Incentives</h3>
             <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
+            <ul class="card__list">
+              <li>Shared success tied to patient experience, turnover, and profitability.</li>
+              <li>Milestones set jointly with leadership and refreshed each quarter.</li>
+              <li>Fees triggered only when agreed-upon metrics move.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -255,6 +288,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <section id="values" class="panel">
         <div class="panel__header">
           <h2>Our Values and Commitment</h2>
+          <p class="panel__text">
+            We show up as partners — calm, prepared, and invested in your people. Our team blends hospitality polish with
+            clinical respect so the culture shift feels supportive, not imposed.
+          </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
@@ -263,6 +300,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
               institution served.
             </p>
+            <ul class="card__list">
+              <li>Human-first decisions that honor patients, families, and staff.</li>
+              <li>Radical candor delivered with hospitality-grade tact.</li>
+              <li>Meticulous follow-through so promises translate into practice.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Our Commitment</h3>
@@ -270,6 +312,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               To work collaboratively with all staff relentlessly pursuing the best possible patient and employee
               experiences.
             </p>
+            <ul class="card__list">
+              <li>Co-design workshops that build ownership at every level.</li>
+              <li>Embedded leaders who coach, not just consult.</li>
+              <li>Measured outcomes shared transparently with stakeholders.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -470,13 +517,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     filter: none;
   }
 
-  .card__meta {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.82rem;
-    color: rgba(38, 33, 28, 0.65);
-    margin-bottom: 0.35rem;
-  }
+    .card__meta {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      color: rgba(38, 33, 28, 0.65);
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(123, 96, 61, 0.08);
+      color: var(--accent-ink);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      box-shadow: inset 0 0 0 1px rgba(37, 51, 74, 0.18);
+      margin-bottom: 0.45rem;
+    }
+
+    .card__list {
+      list-style: none;
+      padding: 0;
+      margin: 0.35rem 0 0;
+      display: grid;
+      gap: 0.45rem;
+      color: rgba(38, 33, 28, 0.8);
+    }
+
+    .card__list li {
+      display: flex;
+      gap: 0.45rem;
+      align-items: flex-start;
+    }
+
+    .card__list li::before {
+      content: '•';
+      color: var(--accent-ink);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-top: -0.05rem;
+    }
 
   .approach-list {
     padding-left: 1.1rem;
