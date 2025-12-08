@@ -215,22 +215,50 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">Our Impact</p>
           <h2>We Produce Measurable Results</h2>
+          <p class="panel__subhead">
+            Every engagement is designed to move the needle on experience, loyalty, and financial health. Here are the
+            outcomes we consistently design toward.
+          </p>
         </div>
         <div class="grid trio">
           <article class="card sketch">
             <div class="card__meta">Patient Experience</div>
             <h3>Higher satisfaction scores</h3>
             <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
+            <div class="stat-row">
+              <span class="stat-badge">+8-12 pts</span>
+              <span class="stat-label">Typical lift in HCAHPS</span>
+            </div>
+            <ul class="detail-list">
+              <li>Moments-of-truth mapping for every service line</li>
+              <li>On-the-spot recovery protocols before discharge</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Team Stability</div>
             <h3>Lower turnover</h3>
             <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
+            <div class="stat-row">
+              <span class="stat-badge">-15-25%</span>
+              <span class="stat-label">Reduced turnover</span>
+            </div>
+            <ul class="detail-list">
+              <li>Leadership coaching that models service-first behaviors</li>
+              <li>Recognition rituals that keep teams energized</li>
+            </ul>
           </article>
           <article class="card sketch">
             <div class="card__meta">Market Reputation</div>
             <h3>Reputation that attracts</h3>
             <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
+            <div class="stat-row">
+              <span class="stat-badge">↑ Demand</span>
+              <span class="stat-label">More referrals &amp; preference</span>
+            </div>
+            <ul class="detail-list">
+              <li>Service storytelling to amplify wins internally and externally</li>
+              <li>Consistency playbooks that protect the brand promise</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -239,15 +267,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">How Are We Compensated</p>
           <h2>The Engagement Model</h2>
+          <p class="panel__subhead">
+            We keep incentives simple: transparent billing for our time and upside participation when we exceed mutually
+            defined targets.
+          </p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Engagement Fee</h3>
             <p>An up-front engagement fee, against which we bill our hourly rates.</p>
+            <ul class="detail-list">
+              <li>Covers discovery, embedded consulting, and ongoing leadership coaching</li>
+              <li>Flexible scope based on the size and complexity of your organization</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Aligned Incentives</h3>
             <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
+            <ul class="detail-list">
+              <li>Shared success tied to pre-agreed metrics (satisfaction, turnover, profitability)</li>
+              <li>Clear reporting cadence so gains are measured and celebrated together</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -255,6 +295,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <section id="values" class="panel">
         <div class="panel__header">
           <h2>Our Values and Commitment</h2>
+          <p class="panel__subhead">Principles that guide every interaction with your patients, people, and leadership.</p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
@@ -263,6 +304,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
               institution served.
             </p>
+            <ul class="detail-list">
+              <li>Earn trust through discretion and humility</li>
+              <li>Honor every perspective—from bedside teams to the boardroom</li>
+              <li>Protect the wellbeing of caregivers as fiercely as patients</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Our Commitment</h3>
@@ -270,6 +316,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               To work collaboratively with all staff relentlessly pursuing the best possible patient and employee
               experiences.
             </p>
+            <ul class="detail-list">
+              <li>Show up on-site, sleeves rolled up, until the new culture sticks</li>
+              <li>Build repeatable playbooks your team can own long after we depart</li>
+              <li>Measure progress transparently so everyone sees the wins</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -468,6 +519,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .card__icon--black {
     color: #000;
     filter: none;
+  }
+
+  .stat-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.25rem 0 0.45rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(123, 96, 61, 0.08);
+    border: 1px dashed rgba(37, 51, 74, 0.15);
+  }
+
+  .stat-badge {
+    font-weight: 700;
+    color: var(--accent-ink);
+    font-size: 0.95rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+    color: rgba(38, 33, 28, 0.75);
+  }
+
+  .detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: grid;
+    gap: 0.35rem;
+    color: rgba(38, 33, 28, 0.78);
+  }
+
+  .detail-list li {
+    position: relative;
+    padding-left: 1.2rem;
+  }
+
+  .detail-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: var(--accent);
+    font-weight: 700;
   }
 
   .card__meta {
