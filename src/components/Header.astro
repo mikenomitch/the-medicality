@@ -23,6 +23,7 @@ import { SITE_TITLE } from '../consts';
                 backdrop-filter: blur(12px);
                 background: rgba(248, 243, 235, 0.85);
                 border-bottom: 1px dashed rgba(37, 51, 74, 0.18);
+                box-shadow: 0 14px 30px rgba(37, 51, 74, 0.08);
                 margin-bottom: 1.5rem;
         }
 
@@ -36,6 +37,7 @@ import { SITE_TITLE } from '../consts';
                 text-transform: uppercase;
                 letter-spacing: 0.08em;
                 font-size: 0.9rem;
+                gap: 1rem;
         }
 
         .logo {
@@ -74,6 +76,12 @@ import { SITE_TITLE } from '../consts';
                 border-color: rgba(37, 51, 74, 0.35);
                 background: rgba(123, 96, 61, 0.12);
                 color: var(--accent-ink);
+        }
+
+        nav a:focus-visible {
+                outline: none;
+                border-color: rgba(37, 51, 74, 0.45);
+                box-shadow: 0 0 0 4px rgba(37, 51, 74, 0.08);
         }
 
         @media (max-width: 780px) {
