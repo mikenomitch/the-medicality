@@ -5,6 +5,7 @@ import { SITE_TITLE } from '../consts';
 <header>
         <div class="nav-shell">
                 <a class="logo" href="/">{SITE_TITLE}</a>
+                <img src="/logo.png" alt="The Medicality Logo" class="header__logo" />
                 <nav>
                         <a href="#intro">About</a>
                         <a href="#difference">Difference</a>
@@ -46,6 +47,16 @@ import { SITE_TITLE } from '../consts';
                 text-decoration: none;
         }
 
+        .header__logo {
+                display: none;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid rgba(37, 51, 74, 0.2);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
         nav {
                 display: flex;
                 gap: 1rem;
@@ -73,6 +84,12 @@ import { SITE_TITLE } from '../consts';
 
                 nav {
                         display: none;
+                }
+        }
+
+        @media (max-width: 480px) {
+                .header__logo {
+                        display: block;
                 }
         }
 </style>
