@@ -31,8 +31,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
       <section id="intro" class="panel intro">
         <div class="panel__header">
-          <p class="eyebrow">Experience Reimagined</p>
-          <h2>The Medicality — Who We Are</h2>
+          <p class="eyebrow">Who We Are</p>
+          <h2>The Medicality</h2>
         </div>
         <p class="panel__text">
           The Medicality is a consulting partner that blends the art of luxury hospitality with the science of healthcare.
@@ -43,17 +43,51 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </p>
       </section>
 
-      <section id="about" class="panel about">
+      <section id="difference" class="panel difference">
         <div class="panel__header">
-          <p class="eyebrow">About Us</p>
-          <h2>The Medicality Team</h2>
-          <p class="panel__subhead">Hospitality Visionaries &amp; Healthcare Practitioners</p>
+          <p class="eyebrow">What We Do</p>
+          <h2>The Medicality Difference</h2>
+        </div>
+        <p class="panel__text">
+          We operate as a transformative force to enhance patient experience by integrating tried and true hospitality
+          standards into hospital environments. We create a "Patient First" service culture and mindset that permeates
+          every level of the organization, from CEO to the front desk greeter. Our services bridge the gap between
+          clinical outcomes and the service environment, ensuring the vision is bidirectional.
+        </p>
+        <div class="grid trio">
+          <article class="card sketch">
+            <h3>Five-Star Service Standards</h3>
+            <p>
+              We introduce proven ultra-luxury hotel systems, processes, and operating protocols into clinical care—
+              everything from personalized greetings to immediate issue resolution for both patients and employees.
+            </p>
+          </article>
+          <article class="card sketch">
+            <h3>Proactive, not Reactive</h3>
+            <p>
+              We do not just review past data; we implement systems for immediate response to issues while the patient is
+              still in the building.
+            </p>
+          </article>
+          <article class="card sketch">
+            <h3>Holistic Stakeholder Focus</h3>
+            <p>
+              We serve three customer constituencies equally well: ownership, patients, and employees, aligning outcomes
+              that benefit all.
+            </p>
+          </article>
+        </div>
+      </section>
+            <section id="about" class="panel about">
+        <div class="panel__header">
+          <p class="eyebrow">The Medicality Team</p>
+          <h2>Hospitality Visionaries &amp; Healthcare Practitioners</h2>
         </div>
         <div class="about__profiles">
           <article class="card sketch profile">
             <img
               class="profile__photo"
-              src="https://natfluence.com/wp-content/uploads/wp-user-avatar/jtreadway.png"
+              src="/jim.png"
               alt="Portrait of Jim Treadway"
               loading="lazy"
               decoding="async"
@@ -70,7 +104,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <article class="card sketch profile">
             <img
               class="profile__photo"
-              src="https://news.feinberg.northwestern.edu/wp-content/uploads/2015/04/Michel-Kliot_150.jpg"
+              src="https://news.feinberg.northwestern.edu/wp-content/uploads/2015/04/Michel-Kliot_15
+0.jpg"
               alt="Portrait of Michel Kliot"
               loading="lazy"
               decoding="async"
@@ -87,7 +122,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <article class="card sketch profile">
             <img
               class="profile__photo"
-              src="https://www.myprivia.com/sites/default/files/styles/provider_landing_200x200_/public/2024-05/kysma_Kamal_Singh.jpg?itok=PbpnoN6S"
+              src="/kamal.png"
               alt="Portrait of Kamal Singh"
               loading="lazy"
               decoding="async"
@@ -104,7 +139,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <article class="card sketch profile">
             <img
               class="profile__photo"
-              src="https://profiles.stanford.edu/proxy/api/cap/profiles/47971/resources/profilephoto/350x350.1657682843305.jpg"
+              src="/gerald.png"
               alt="Portrait of Gerald Grant"
               loading="lazy"
               decoding="async"
@@ -121,51 +156,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>
       </section>
 
-      <section id="difference" class="panel difference">
-        <div class="panel__header">
-          <p class="eyebrow">Our Promise</p>
-          <h2>What We Do</h2>
-          <p class="panel__subhead">The Medicality Difference</p>
-          <p class="panel__subhead">
-            We operate as a transformative force to enhance patient experience by integrating tried and true hospitality
-            standards into hospital environments. We create a "Patient First" service culture and mindset that permeates
-            every level of the organization, from CEO to the front desk greeter. Our services bridge the gap between
-            clinical outcomes and the service environment, ensuring the vision is bidirectional.
-          </p>
-        </div>
-        <div class="grid trio">
-          <article class="card sketch">
-            <div class="card__icon" aria-hidden="true">✦</div>
-            <h3>Five-Star Service Standards</h3>
-            <p>
-              We introduce proven ultra-luxury hotel systems, processes, and operating protocols into clinical care—
-              everything from personalized greetings to immediate issue resolution for both patients and employees.
-            </p>
-          </article>
-          <article class="card sketch">
-            <div class="card__icon" aria-hidden="true">⚡</div>
-            <h3>Proactive, not Reactive</h3>
-            <p>
-              We do not just review past data; we implement systems for immediate response to issues while the patient is
-              still in the building.
-            </p>
-          </article>
-          <article class="card sketch">
-            <div class="card__icon" aria-hidden="true">∞</div>
-            <h3>Holistic Stakeholder Focus</h3>
-            <p>
-              We serve three customer constituencies equally well: ownership, patients, and employees, aligning outcomes
-              that benefit all.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section id="approach" class="panel approach">
         <div class="panel__header">
-          <p class="eyebrow">Our Approach</p>
-          <h2>How We Do It</h2>
-          <p class="panel__subhead">
+          <p class="eyebrow">How We Do It</p>
+          <h2>Our Approach</h2>
+          <p class="panel__text">
             We blend luxury hospitality playbooks with behavioral psychology to build a service-first culture that uplifts
             patients, employees, and ownership alike.
           </p>
@@ -205,9 +200,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             </ol>
           </article>
         </div>
-      </section>
-
-      <section class="panel cta">
         <div class="cta-banner sketch">
           <div>
             <p class="eyebrow cta-eyebrow">Ready to start the transformation?</p>
@@ -217,45 +209,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>
       </section>
 
-      <section id="services" class="panel services">
-        <div class="panel__header">
-          <p class="eyebrow">What We Do</p>
-          <h2>Services Designed for Hospital Leaders</h2>
-          <p class="panel__subhead">Comprehensive consulting to transform patient experience and workplace culture.</p>
-        </div>
-        <div class="grid trio">
-          <article class="card">
-            <div class="card__meta">Process Redesign</div>
-            <h3>Hospitality-Inspired Process Redesign</h3>
-            <p>
-              We overhaul the patient journey from pre-arrival to post-discharge, infusing hospitality rituals at every
-              step for calm, confidence, and clarity.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card__meta">Staff Training</div>
-            <h3>Empathy-Driven Staff Training</h3>
-            <p>
-              Organization-wide coaching for executives and frontline caregivers focused on empathy, communication, and
-              polished service delivery.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card__meta">Employee Experience</div>
-            <h3>Employee Experience Consulting</h3>
-            <p>
-              We refine hiring, onboarding, and growth practices to build a culture where caregivers feel valued—and where
-              exceptional care is the natural result.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section id="outcomes" class="panel">
         <div class="panel__header">
-          <p class="eyebrow">Impact</p>
-          <h2>Measurable Outcomes</h2>
-          <p class="panel__subhead">How your hospital benefits, in measurables</p>
+          <p class="eyebrow">Our Impact</p>
+          <h2>We Produce Measurable Results</h2>
         </div>
         <div class="grid trio">
           <article class="card sketch">
@@ -278,8 +235,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
       <section id="compensation" class="panel">
         <div class="panel__header">
-          <p class="eyebrow">Engagement Model</p>
-          <h2>How Are We Compensated</h2>
+          <p class="eyebrow">How Are We Compensated</p>
+          <h2>The Engagement Model</h2>
         </div>
         <div class="grid duo">
           <article class="card sketch">
@@ -295,7 +252,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
       <section id="values" class="panel">
         <div class="panel__header">
-          <p class="eyebrow">Our Ethos</p>
           <h2>Our Values and Commitment</h2>
         </div>
         <div class="grid duo">
@@ -317,39 +273,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       </section>
 
       <section id="contact" class="panel contact">
-        <div class="panel__header">
-          <p class="eyebrow">Start the Transformation</p>
-          <h2>Contact Us</h2>
-          <p class="panel__subhead">
-            Ready to elevate satisfaction for your patients and practitioners? Let’s discuss how The Medicality can bring
-            five-star service to your organization.
-          </p>
-        </div>
         <div class="contact__grid">
-          <form class="form sketch" action="#" method="post">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your full name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-            <label>
-              Organization
-              <input type="text" name="organization" placeholder="Hospital or health system" />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
-            </label>
-            <button type="submit" class="btn primary">Send Message</button>
-            <p class="privacy">We will never share your information. We respond within one business day.</p>
-          </form>
           <div class="contact__details">
             <div class="card">
-              <div class="card__meta">Direct Contact</div>
-              <h3>Prefer to reach out directly?</h3>
+              <div class="card__meta">Start the Transformation</div>
+              <h3>Contact Us</h3>
+              <p class="panel__subhead mb-small">
+                Ready to elevate satisfaction for your patients and practitioners?
+                Let’s discuss how The Medicality can bring five-star service to your organization.
+              </p>
               <ul>
                 <li><strong>Email:</strong> jamesbtreadway@gmail.com</li>
                 <li><strong>Phone:</strong> (206) 310-7772</li>
@@ -378,7 +310,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--soft-shadow), inset 0 0 0 1px rgba(0, 0, 0, 0.06);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     isolation: isolate;
   }
 
@@ -470,7 +402,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .panel {
-    padding: 2.75rem 0;
+    padding: 2rem 0;
     position: relative;
   }
 
@@ -480,7 +412,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
   .panel__header {
     max-width: 760px;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .eyebrow {
+    color: rgba(38, 33, 28, 0.7);
   }
 
   .panel__subhead {
@@ -520,6 +456,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     margin-bottom: 0.5rem;
     color: var(--accent-ink);
     text-shadow: 0 6px 20px rgba(37, 51, 74, 0.2);
+    filter: grayscale(1);
+  }
+
+  .card__icon--black {
+    color: #000;
+    filter: none;
   }
 
   .card__meta {
@@ -652,8 +594,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .about__profiles {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     align-items: stretch;
   }
@@ -663,7 +605,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     grid-template-columns: 120px 1fr;
     gap: 1rem;
     align-items: start;
-    flex: 1 1 320px;
   }
 
   .profile__photo {
@@ -684,6 +625,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .profile__content p {
     margin: 0;
     color: rgba(38, 33, 28, 0.78);
+  }
+
+  .mb-small {
+    margin-bottom: 0.5em;
   }
 
   @media (max-width: 720px) {
@@ -710,7 +655,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     }
 
     .about__profiles {
+      grid-template-columns: 1fr;
       gap: 0.75rem;
     }
+
   }
 </style>
