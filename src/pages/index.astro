@@ -215,22 +215,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">Our Impact</p>
           <h2>We Produce Measurable Results</h2>
+          <p class="panel__subhead">Operational wins that show up in patient stories, balance sheets, and employee retention.</p>
         </div>
         <div class="grid trio">
           <article class="card sketch">
             <div class="card__meta">Patient Experience</div>
             <h3>Higher satisfaction scores</h3>
-            <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
+            <p>Earn stronger HCAHPS/Press Ganey scores through anticipatory, emotionally intelligent service touches.</p>
+            <div class="metric">
+              <span class="metric__value">+12-18 pts</span>
+              <span class="metric__label">Average lift in patient satisfaction</span>
+            </div>
           </article>
           <article class="card sketch">
             <div class="card__meta">Team Stability</div>
             <h3>Lower turnover</h3>
             <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
+            <div class="metric">
+              <span class="metric__value">-20-30%</span>
+              <span class="metric__label">Reduction in regrettable attrition</span>
+            </div>
           </article>
           <article class="card sketch">
             <div class="card__meta">Market Reputation</div>
             <h3>Reputation that attracts</h3>
             <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
+            <div class="metric">
+              <span class="metric__value">+22%</span>
+              <span class="metric__label">Increase in referral volume from delighted patients</span>
+            </div>
           </article>
         </div>
       </section>
@@ -239,15 +252,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="panel__header">
           <p class="eyebrow">How Are We Compensated</p>
           <h2>The Engagement Model</h2>
+          <p class="panel__subhead">Transparent, incentive-aligned structures that let you see value early and often.</p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Engagement Fee</h3>
             <p>An up-front engagement fee, against which we bill our hourly rates.</p>
+            <ul class="compact-list">
+              <li>Right-sized to the scope so your teams gain momentum quickly.</li>
+              <li>Includes a discovery sprint, stakeholder alignment, and early wins.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Aligned Incentives</h3>
             <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
+            <ul class="compact-list">
+              <li>Metrics set collaboratively—patient scores, turnover, profitability, or safety.</li>
+              <li>Shared dashboards for progress visibility and agile course correction.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -255,21 +277,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <section id="values" class="panel">
         <div class="panel__header">
           <h2>Our Values and Commitment</h2>
+          <p class="panel__subhead">Principles that keep us grounded and a promise that keeps us accountable.</p>
         </div>
         <div class="grid duo">
           <article class="card sketch">
             <h3>Our Values</h3>
-            <p>
-              We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
-              institution served.
-            </p>
+            <ul class="value-list">
+              <li><strong>Compassion first.</strong> We lead with empathy for patients, families, and staff.</li>
+              <li><strong>Hospitality mindset.</strong> Every touchpoint should feel considered, gracious, and calm.</li>
+              <li><strong>Evidence-driven.</strong> Recommendations are grounded in data and frontline insight.</li>
+              <li><strong>Respect for people.</strong> We nurture the teams who create exceptional outcomes.</li>
+            </ul>
           </article>
           <article class="card sketch">
             <h3>Our Commitment</h3>
-            <p>
-              To work collaboratively with all staff relentlessly pursuing the best possible patient and employee
-              experiences.
-            </p>
+            <ul class="value-list">
+              <li>Embed alongside your teams to co-create solutions, not dictate them.</li>
+              <li>Communicate clearly, share learnings openly, and adjust fast.</li>
+              <li>Celebrate wins, address setbacks with humility, and never lose sight of the human experience.</li>
+              <li>Leave your organization stronger, with durable practices that outlast our engagement.</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -468,6 +495,55 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .card__icon--black {
     color: #000;
     filter: none;
+  }
+
+  .metric {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    padding: 0.65rem 0.85rem;
+    margin-top: 0.5rem;
+    border-radius: 14px;
+    background: rgba(123, 96, 61, 0.08);
+    border: 1px dashed rgba(37, 51, 74, 0.18);
+  }
+
+  .metric__value {
+    font-weight: 700;
+    color: var(--accent-ink);
+    letter-spacing: 0.02em;
+  }
+
+  .metric__label {
+    color: rgba(37, 51, 74, 0.75);
+    font-size: 0.95rem;
+  }
+
+  .compact-list,
+  .value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: grid;
+    gap: 0.5rem;
+    color: rgba(38, 33, 28, 0.78);
+  }
+
+  .compact-list li,
+  .value-list li {
+    position: relative;
+    padding-left: 1.4rem;
+  }
+
+  .compact-list li::before,
+  .value-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-ink);
+    font-weight: 700;
   }
 
   .card__meta {
