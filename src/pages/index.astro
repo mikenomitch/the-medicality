@@ -27,6 +27,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <a class="btn ghost" href="#intro">Learn More</a>
           </div>
         </div>
+        <img src="/logo.png" alt="The Medicality Logo" class="hero__logo" />
       </section>
 
       <section id="intro" class="panel intro">
@@ -636,6 +637,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     margin-bottom: 0.5em;
   }
 
+  .hero__logo {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(248, 243, 235, 0.9);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
   @media (max-width: 720px) {
     .hero__overlay {
       padding: 3rem 1.75rem;
@@ -643,6 +657,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
     .hero {
       min-height: 56vh;
+    }
+
+    .hero__logo {
+      width: 120px;
+      height: 120px;
+      bottom: 1.5rem;
+      right: 1.5rem;
     }
 
     .cta-banner {
