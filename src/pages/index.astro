@@ -1,695 +1,269 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
+<MainLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media" role="presentation" aria-hidden="true"></div>
+    <div class="hero__overlay">
+      <p class="eyebrow eyebrow--light">Concierge-Caliber Healthcare</p>
+      <h1 id="hero-title">Healthcare meets Five-Star Hospitality</h1>
+      <p class="lead">
+        Transforming hospitals with ultra-luxury service standards, embedded expertise, and the calm confidence of a
+        world-class hotel — so patients and practitioners feel equally cared for.
+      </p>
+      <div class="hero__actions">
+        <a class="btn primary" href="#contact">Contact Us</a>
+        <a class="btn ghost" href="#intro">Learn More</a>
+      </div>
+    </div>
+    <img src="/logo.png" alt="The Medicality logo" class="hero__logo" loading="lazy" decoding="async" />
+  </section>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__media" role="presentation" aria-hidden="true"></div>
-        <div class="hero__overlay">
-          <p class="eyebrow__light">Concierge-Caliber Healthcare</p>
-          <h1 id="hero-title">Healthcare meets Five-Star Hospitality</h1>
-          <p class="lead">
-            Transforming hospitals with ultra-luxury service standards, embedded expertise, and the calm confidence of a
-            world-class hotel — so patients and practitioners feel equally cared for.
-          </p>
-          <div class="hero__actions">
-            <a class="btn primary" href="#contact">Contact Us</a>
-            <a class="btn ghost" href="#intro">Learn More</a>
-          </div>
-        </div>
-        <img src="/logo.png" alt="The Medicality Logo" class="hero__logo" />
-      </section>
+  <section id="intro" class="panel intro" aria-labelledby="intro-heading">
+    <div class="panel__header">
+      <p class="eyebrow">Who We Are</p>
+      <h2 id="intro-heading">The Medicality</h2>
+    </div>
+    <p class="panel__text">
+      The Medicality is a consulting partner that blends the art of luxury hospitality with the science of healthcare. We
+      help hospitals transform clinical environments into five-star experiences that energize practitioners and delight
+      patients. By applying world-class service principles from ultra-luxury hotels, we elevate every patient touchpoint
+      while equipping care teams to thrive. Exceptional patient and employee satisfaction become your new standard.
+    </p>
+  </section>
 
-      <section id="intro" class="panel intro">
-        <div class="panel__header">
-          <p class="eyebrow">Who We Are</p>
-          <h2>The Medicality</h2>
-        </div>
-        <p class="panel__text">
-          The Medicality is a consulting partner that blends the art of luxury hospitality with the science of healthcare.
-          We help hospitals transform clinical environments into five-star experiences that energize practitioners and
-          delight patients. By applying world-class service principles from ultra-luxury hotels, we elevate every patient
-          touchpoint while equipping care teams to thrive. Exceptional patient and employee satisfaction become your new
-          standard.
+  <section id="difference" class="panel difference" aria-labelledby="difference-heading">
+    <div class="panel__header">
+      <p class="eyebrow">What We Do</p>
+      <h2 id="difference-heading">The Medicality Difference</h2>
+    </div>
+    <p class="panel__text">
+      We operate as a transformative force to enhance patient experience by integrating tried and true hospitality
+      standards into hospital environments. We create a "Patient First" service culture and mindset that permeates every
+      level of the organization, from CEO to the front desk greeter. Our services bridge the gap between clinical outcomes
+      and the service environment, ensuring the vision is bidirectional.
+    </p>
+    <div class="grid trio" role="list">
+      <article class="card sketch" role="listitem">
+        <h3>Five-Star Service Standards</h3>
+        <p>
+          We introduce proven ultra-luxury hotel systems, processes, and operating protocols into clinical care—everything
+          from personalized greetings to immediate issue resolution for both patients and employees.
         </p>
-      </section>
-
-      <section id="difference" class="panel difference">
-        <div class="panel__header">
-          <p class="eyebrow">What We Do</p>
-          <h2>The Medicality Difference</h2>
-        </div>
-        <p class="panel__text">
-          We operate as a transformative force to enhance patient experience by integrating tried and true hospitality
-          standards into hospital environments. We create a "Patient First" service culture and mindset that permeates
-          every level of the organization, from CEO to the front desk greeter. Our services bridge the gap between
-          clinical outcomes and the service environment, ensuring the vision is bidirectional.
+      </article>
+      <article class="card sketch" role="listitem">
+        <h3>Proactive, not Reactive</h3>
+        <p>
+          We do not just review past data; we implement systems for immediate response to issues while the patient is still
+          in the building.
         </p>
-        <div class="grid trio">
-          <article class="card sketch">
-            <h3>Five-Star Service Standards</h3>
-            <p>
-              We introduce proven ultra-luxury hotel systems, processes, and operating protocols into clinical care—
-              everything from personalized greetings to immediate issue resolution for both patients and employees.
-            </p>
-          </article>
-          <article class="card sketch">
-            <h3>Proactive, not Reactive</h3>
-            <p>
-              We do not just review past data; we implement systems for immediate response to issues while the patient is
-              still in the building.
-            </p>
-          </article>
-          <article class="card sketch">
-            <h3>Holistic Stakeholder Focus</h3>
-            <p>
-              We serve three customer constituencies equally well: ownership, patients, and employees, aligning outcomes
-              that benefit all.
-            </p>
-          </article>
-        </div>
-      </section>
+      </article>
+      <article class="card sketch" role="listitem">
+        <h3>Holistic Stakeholder Focus</h3>
+        <p>
+          We serve three customer constituencies equally well: ownership, patients, and employees, aligning outcomes that
+          benefit all.
+        </p>
+      </article>
+    </div>
+  </section>
 
-      <section id="about" class="panel about">
-        <div class="panel__header">
-          <p class="eyebrow">The Medicality Team</p>
-          <h2>Hospitality Visionaries &amp; Healthcare Practitioners</h2>
-        </div>
-        <div class="about__profiles">
-          <article class="card sketch profile">
-            <img
-              class="profile__photo"
-              src="/jim.png"
-              alt="Portrait of Jim Treadway"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="profile__content">
-              <h3>Jim Treadway</h3>
-              <p>
-                Treadway is a lifelong hotelier – operator, developer, and consultant. Former President of Westin Hotels &amp;
-                Resorts North America and then Founder and CEO of Allegis LLC, dba MTM Luxury Lodging and FST Asset
-                Management.
-              </p>
-            </div>
-          </article>
-          <article class="card sketch profile">
-            <img
-              class="profile__photo"
-              src="https://news.feinberg.northwestern.edu/wp-content/uploads/2015/04/Michel-Kliot_15
-0.jpg"
-              alt="Portrait of Michel Kliot"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="profile__content">
-              <h3>Michel Kliot MD</h3>
-              <p>
-                Dr. Kliot is a neurosurgeon who has led Centers of Clinical Excellence in the field of peripheral nerve
-                surgery. I have been a founding member of several medical device start-ups that have succeeded in improving
-                patient care by taking ideas from the laboratory bench into the clinic.
-              </p>
-            </div>
-          </article>
-          <article class="card sketch profile">
-            <img
-              class="profile__photo"
-              src="/kamal.png"
-              alt="Portrait of Kamal Singh"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="profile__content">
-              <h3>Kamal Singh MD</h3>
-              <p>
-                Dr. Singh is an accomplished physician and operational leader with a proven record of leading complex
-                organizations and spearheading the transition to value-based care. He is now augmenting this experience as
-                an MBA Candidate at Duke's Fuqua School of Business.
-              </p>
-            </div>
-          </article>
-          <article class="card sketch profile">
-            <img
-              class="profile__photo"
-              src="/gerald.png"
-              alt="Portrait of Gerald Grant"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="profile__content">
-              <h3>Gerald Grant MD</h3>
-              <p>
-                Dr. Grant is a Distinguished Professor and Chair of Neurosurgery at Duke University and is passionate about
-                providing the absolute best patient experience and outcomes. He is currently an MBA candidate at the Fuqua
-                School of Business.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="approach" class="panel approach">
-        <div class="panel__header">
-          <p class="eyebrow">How We Do It</p>
-          <h2>Our Approach</h2>
-          <p class="panel__text">
-            We blend luxury hospitality playbooks with behavioral psychology to build a service-first culture that uplifts
-            patients, employees, and ownership alike.
+  <section id="about" class="panel about" aria-labelledby="about-heading">
+    <div class="panel__header">
+      <p class="eyebrow">The Medicality Team</p>
+      <h2 id="about-heading">Hospitality Visionaries &amp; Healthcare Practitioners</h2>
+    </div>
+    <div class="about__profiles" role="list">
+      <article class="card sketch profile" role="listitem">
+        <img class="profile__photo" src="/jim.png" alt="Portrait of Jim Treadway" loading="lazy" decoding="async" />
+        <div class="profile__content">
+          <h3>Jim Treadway</h3>
+          <p>
+            Treadway is a lifelong hotelier – operator, developer, and consultant. Former President of Westin Hotels &amp;
+            Resorts North America and then Founder and CEO of Allegis LLC, dba MTM Luxury Lodging and FST Asset
+            Management.
           </p>
         </div>
-        <div class="grid duo">
-          <article class="card sketch">
-            <div class="card__meta">Strategic Approach</div>
-            <h3>Patient-first by design</h3>
-            <ol class="approach-list">
-              <li>Apply proven ultra-luxury hotel methods and behavioral psychology to create a patient-first mindset.</li>
-              <li>Secure buy-in from leadership through frontline staff to build a strong service culture that treats patients and employees as customers.</li>
-              <li>Center on the principle that well-cared-for employees deliver superior service and performance.</li>
-              <li>
-                Serve ownership, patients, and employees equally well, measuring success by:
-                <ol class="approach-sublist">
-                  <li>Hospital ownership: asset value and profitability.</li>
-                  <li>Patients: satisfaction scores, impact on outcomes, and post-stay social posts.</li>
-                  <li>Employees: turnover rate and satisfaction survey scores.</li>
-                </ol>
-              </li>
+      </article>
+      <article class="card sketch profile" role="listitem">
+        <img
+          class="profile__photo"
+          src="https://news.feinberg.northwestern.edu/wp-content/uploads/2015/04/Michel-Kliot_150.jpg"
+          alt="Portrait of Michel Kliot"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="profile__content">
+          <h3>Michel Kliot MD</h3>
+          <p>
+            Dr. Kliot is a neurosurgeon who has led Centers of Clinical Excellence in the field of peripheral nerve
+            surgery. I have been a founding member of several medical device start-ups that have succeeded in improving
+            patient care by taking ideas from the laboratory bench into the clinic.
+          </p>
+        </div>
+      </article>
+      <article class="card sketch profile" role="listitem">
+        <img class="profile__photo" src="/kamal.png" alt="Portrait of Kamal Singh" loading="lazy" decoding="async" />
+        <div class="profile__content">
+          <h3>Kamal Singh MD</h3>
+          <p>
+            Dr. Singh is an accomplished physician and operational leader with a proven record of leading complex
+            organizations and spearheading the transition to value-based care. He is now augmenting this experience as an
+            MBA Candidate at Duke's Fuqua School of Business.
+          </p>
+        </div>
+      </article>
+      <article class="card sketch profile" role="listitem">
+        <img class="profile__photo" src="/gerald.png" alt="Portrait of Gerald Grant" loading="lazy" decoding="async" />
+        <div class="profile__content">
+          <h3>Gerald Grant MD</h3>
+          <p>
+            Dr. Grant is a Distinguished Professor and Chair of Neurosurgery at Duke University and is passionate about
+            providing the absolute best patient experience and outcomes. He is currently an MBA candidate at the Fuqua
+            School of Business.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="approach" class="panel approach" aria-labelledby="approach-heading">
+    <div class="panel__header">
+      <p class="eyebrow">How We Do It</p>
+      <h2 id="approach-heading">Our Approach</h2>
+      <p class="panel__text">
+        We blend luxury hospitality playbooks with behavioral psychology to build a service-first culture that uplifts
+        patients, employees, and ownership alike.
+      </p>
+    </div>
+    <div class="grid duo" role="list">
+      <article class="card sketch" role="listitem">
+        <div class="card__meta">Strategic Approach</div>
+        <h3>Patient-first by design</h3>
+        <ol class="approach-list">
+          <li>Apply proven ultra-luxury hotel methods and behavioral psychology to create a patient-first mindset.</li>
+          <li>
+            Secure buy-in from leadership through frontline staff to build a strong service culture that treats patients and
+            employees as customers.
+          </li>
+          <li>Center on the principle that well-cared-for employees deliver superior service and performance.</li>
+          <li>
+            Serve ownership, patients, and employees equally well, measuring success by:
+            <ol class="approach-sublist">
+              <li>Hospital ownership: asset value and profitability.</li>
+              <li>Patients: satisfaction scores, impact on outcomes, and post-stay social posts.</li>
+              <li>Employees: turnover rate and satisfaction survey scores.</li>
             </ol>
-          </article>
-          <article class="card sketch">
-            <div class="card__meta">Tactical Approach</div>
-            <h3>Embedded, measurable transformation</h3>
-            <ol class="approach-list">
-              <li>Embed within hospital operations with full access to understand current-state realities.</li>
-              <li>Track patient satisfaction and emotional status alongside medical charts for a holistic view.</li>
-              <li>Audit HR processes end-to-end to attract, train, motivate, and retain the right people.</li>
-              <li>Coach leaders, clinicians, and service teams to model “service first” behaviors for patients and employees.</li>
-              <li>Strengthen pre-arrival communication, in-hospital touchpoints, discharge, and post-stay follow-up.</li>
-              <li>Respond immediately to patient and employee issues so concerns are resolved before discharge.</li>
-              <li>Hold regular management huddles to map daily and weekly consultant activities.</li>
-              <li>Host employee forums to surface improvement opportunities from those closest to care.</li>
-              <li>Measure impact on profit, patient scores (HCAHPS/Press Ganey), turnover, and employee satisfaction.</li>
-              <li>Operate with compassion, patience, warmth, sensitivity, and visible care for the institution.</li>
-            </ol>
-          </article>
+          </li>
+        </ol>
+      </article>
+      <article class="card sketch" role="listitem">
+        <div class="card__meta">Tactical Approach</div>
+        <h3>Embedded, measurable transformation</h3>
+        <ol class="approach-list">
+          <li>Embed within hospital operations with full access to understand current-state realities.</li>
+          <li>Track patient satisfaction and emotional status alongside medical charts for a holistic view.</li>
+          <li>Audit HR processes end-to-end to attract, train, motivate, and retain the right people.</li>
+          <li>Coach leaders, clinicians, and service teams to model “service first” behaviors for patients and employees.</li>
+          <li>Strengthen pre-arrival communication, in-hospital touchpoints, discharge, and post-stay follow-up.</li>
+          <li>Respond immediately to patient and employee issues so concerns are resolved before discharge.</li>
+          <li>Hold regular management huddles to map daily and weekly consultant activities.</li>
+          <li>Host employee forums to surface improvement opportunities from those closest to care.</li>
+          <li>Measure impact on profit, patient scores (HCAHPS/Press Ganey), turnover, and employee satisfaction.</li>
+          <li>Operate with compassion, patience, warmth, sensitivity, and visible care for the institution.</li>
+        </ol>
+      </article>
+    </div>
+    <div class="cta-banner sketch">
+      <div>
+        <p class="eyebrow cta-eyebrow">Ready to start the transformation?</p>
+        <h3>Bring five-star service to your hospital.</h3>
+      </div>
+      <a class="btn primary" href="#contact">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <section id="outcomes" class="panel" aria-labelledby="outcomes-heading">
+    <div class="panel__header">
+      <p class="eyebrow">Our Impact</p>
+      <h2 id="outcomes-heading">We Produce Measurable Results</h2>
+    </div>
+    <div class="grid trio" role="list">
+      <article class="card sketch" role="listitem">
+        <div class="card__meta">Patient Experience</div>
+        <h3>Higher satisfaction scores</h3>
+        <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
+      </article>
+      <article class="card sketch" role="listitem">
+        <div class="card__meta">Team Stability</div>
+        <h3>Lower turnover</h3>
+        <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
+      </article>
+      <article class="card sketch" role="listitem">
+        <div class="card__meta">Market Reputation</div>
+        <h3>Reputation that attracts</h3>
+        <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="compensation" class="panel" aria-labelledby="compensation-heading">
+    <div class="panel__header">
+      <p class="eyebrow">How Are We Compensated</p>
+      <h2 id="compensation-heading">The Engagement Model</h2>
+    </div>
+    <div class="grid duo" role="list">
+      <article class="card sketch" role="listitem">
+        <h3>Engagement Fee</h3>
+        <p>An up-front engagement fee, against which we bill our hourly rates.</p>
+      </article>
+      <article class="card sketch" role="listitem">
+        <h3>Aligned Incentives</h3>
+        <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="values" class="panel" aria-labelledby="values-heading">
+    <div class="panel__header">
+      <h2 id="values-heading">Our Values and Commitment</h2>
+    </div>
+    <div class="grid duo" role="list">
+      <article class="card sketch" role="listitem">
+        <h3>Our Values</h3>
+        <p>
+          We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
+          institution served.
+        </p>
+      </article>
+      <article class="card sketch" role="listitem">
+        <h3>Our Commitment</h3>
+        <p>
+          To work collaboratively with all staff relentlessly pursuing the best possible patient and employee experiences.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="panel contact" aria-labelledby="contact-heading">
+    <div class="contact__grid">
+      <div class="contact__details">
+        <div class="card">
+          <div class="card__meta">Start the Transformation</div>
+          <h3 id="contact-heading">Contact Us</h3>
+          <p class="panel__subhead mb-small">
+            Ready to elevate satisfaction for your patients and practitioners? Let’s discuss how The Medicality can bring
+            five-star service to your organization.
+          </p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:jamesbtreadway@gmail.com">jamesbtreadway@gmail.com</a></li>
+            <li><strong>Phone:</strong> (206) 310-7772</li>
+            <li><strong>Office:</strong> 59 S Newport Dr, Napa, CA 94559</li>
+          </ul>
+          <p class="handnote">We are delighted to meet in person or virtually—whatever feels most comfortable.</p>
         </div>
-        <div class="cta-banner sketch">
-          <div>
-            <p class="eyebrow cta-eyebrow">Ready to start the transformation?</p>
-            <h3>Bring five-star service to your hospital.</h3>
-          </div>
-          <a class="btn primary" href="#contact">Schedule a Consultation</a>
-        </div>
-      </section>
-
-      <section id="outcomes" class="panel">
-        <div class="panel__header">
-          <p class="eyebrow">Our Impact</p>
-          <h2>We Produce Measurable Results</h2>
-        </div>
-        <div class="grid trio">
-          <article class="card sketch">
-            <div class="card__meta">Patient Experience</div>
-            <h3>Higher satisfaction scores</h3>
-            <p>Earn stronger scores and eligibility for subsidies through consistently elevated patient experience.</p>
-          </article>
-          <article class="card sketch">
-            <div class="card__meta">Team Stability</div>
-            <h3>Lower turnover</h3>
-            <p>Reduce employee churn and unlock the savings that come with retaining engaged, service-driven teams.</p>
-          </article>
-          <article class="card sketch">
-            <div class="card__meta">Market Reputation</div>
-            <h3>Reputation that attracts</h3>
-            <p>Improve your standing to drive higher demand from patients and referring medical professionals alike.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="compensation" class="panel">
-        <div class="panel__header">
-          <p class="eyebrow">How Are We Compensated</p>
-          <h2>The Engagement Model</h2>
-        </div>
-        <div class="grid duo">
-          <article class="card sketch">
-            <h3>Engagement Fee</h3>
-            <p>An up-front engagement fee, against which we bill our hourly rates.</p>
-          </article>
-          <article class="card sketch">
-            <h3>Aligned Incentives</h3>
-            <p>Incentive fees based upon improvements to specific performance metrics of the hospital.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="values" class="panel">
-        <div class="panel__header">
-          <h2>Our Values and Commitment</h2>
-        </div>
-        <div class="grid duo">
-          <article class="card sketch">
-            <h3>Our Values</h3>
-            <p>
-              We operate with compassion, patience, warmth, sensitivity and a discernible, deep sense of caring for the
-              institution served.
-            </p>
-          </article>
-          <article class="card sketch">
-            <h3>Our Commitment</h3>
-            <p>
-              To work collaboratively with all staff relentlessly pursuing the best possible patient and employee
-              experiences.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="panel contact">
-        <div class="contact__grid">
-          <div class="contact__details">
-            <div class="card">
-              <div class="card__meta">Start the Transformation</div>
-              <h3>Contact Us</h3>
-              <p class="panel__subhead mb-small">
-                Ready to elevate satisfaction for your patients and practitioners?
-                Let’s discuss how The Medicality can bring five-star service to your organization.
-              </p>
-              <ul>
-                <li><strong>Email:</strong> <a href="mailto:jamesbtreadway@gmail.com">jamesbtreadway@gmail.com</a></li>
-                <li><strong>Phone:</strong> (206) 310-7772</li>
-                <li><strong>Office:</strong> 59 S Newport Dr, Napa, CA 94559</li>
-              </ul>
-              <p class="handnote">We are delighted to meet in person or virtually—whatever feels most comfortable.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
-
-<style>
-  :global(body) {
-    background-image: linear-gradient(180deg, rgba(37, 51, 74, 0.06) 0, rgba(37, 51, 74, 0) 160px);
-  }
-
-  .hero {
-    position: relative;
-    min-height: 62vh;
-    display: grid;
-    align-items: center;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--soft-shadow), inset 0 0 0 1px rgba(0, 0, 0, 0.06);
-    margin-bottom: 1rem;
-    isolation: isolate;
-  }
-
-  .hero__media {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, rgba(37, 51, 74, 0.7), rgba(123, 96, 61, 0.55)),
-      url('/stay.jpg') center/cover;
-    filter: grayscale(0.05) saturate(0.8);
-    opacity: 0.92;
-  }
-
-  .hero__overlay {
-    position: relative;
-    max-width: 650px;
-    padding: 4rem 3rem;
-    color: #f8f5ef;
-    backdrop-filter: blur(2px);
-    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  }
-
-  .hero__overlay h1 {
-    color: #fff;
-    text-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
-  }
-
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    color: rgba(38, 33, 28, 0.7);
-  }
-
-  .eyebrow__light {
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    color: rgba(248, 243, 235, 0.88);
-  }
-
-  .lead {
-    font-size: 1.1rem;
-    margin: 0 0 1.25rem 0;
-    color: rgba(248, 243, 235, 0.9);
-  }
-
-  .hero__actions {
-    display: flex;
-    gap: 0.85rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.75rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.25rem;
-    border-radius: 999px;
-    font-weight: 600;
-    border: 1px dashed rgba(248, 243, 235, 0.6);
-    color: inherit;
-    transition: all 0.2s ease;
-    background: transparent;
-    text-decoration: none;
-  }
-
-  .btn.primary {
-    background: rgba(248, 243, 235, 0.92);
-    color: var(--accent-ink);
-    border-color: transparent;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
-  }
-
-  .btn.primary:hover {
-    background: #fffdf8;
-    transform: translateY(-1px);
-  }
-
-  .btn.ghost {
-    color: #f8f5ef;
-    border-color: rgba(248, 243, 235, 0.5);
-  }
-
-  .btn.ghost:hover {
-    border-color: #f8f5ef;
-    background: rgba(248, 243, 235, 0.08);
-  }
-
-  .note {
-    font-size: 0.9rem;
-    color: rgba(248, 243, 235, 0.8);
-    margin: 0;
-    font-style: italic;
-  }
-
-  .panel {
-    padding: 2rem 0;
-    position: relative;
-  }
-
-  .panel + .panel {
-    border-top: 1px dashed rgba(37, 51, 74, 0.18);
-  }
-
-  .panel__header {
-    max-width: 760px;
-    margin-bottom: 1rem;
-  }
-
-  .panel__subhead {
-    color: rgba(38, 33, 28, 0.7);
-    max-width: 640px;
-    margin: 0;
-  }
-
-  .panel__text {
-    max-width: 960px;
-    font-size: 1.05rem;
-  }
-
-  .grid.duo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .grid.trio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .card {
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    background: rgba(255, 255, 255, 0.82);
-    box-shadow: var(--soft-shadow);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card__icon {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: var(--accent-ink);
-    text-shadow: 0 6px 20px rgba(37, 51, 74, 0.2);
-    filter: grayscale(1);
-  }
-
-  .card__icon--black {
-    color: #000;
-    filter: none;
-  }
-
-  .card__meta {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.82rem;
-    color: rgba(38, 33, 28, 0.65);
-    margin-bottom: 0.35rem;
-  }
-
-  .approach-list {
-    padding-left: 1.1rem;
-    display: grid;
-    gap: 0.6rem;
-    color: rgba(38, 33, 28, 0.85);
-    margin: 0;
-  }
-
-  .approach-sublist {
-    padding-left: 1.1rem;
-    margin-top: 0.4rem;
-    display: grid;
-    gap: 0.4rem;
-  }
-
-  .sketch {
-    background: linear-gradient(135deg, rgba(123, 96, 61, 0.06) 0%, rgba(37, 51, 74, 0.03) 100%);
-    border: 1px dashed var(--stroke);
-  }
-
-  .lined {
-    border: 1px solid rgba(37, 51, 74, 0.18);
-    background-image: linear-gradient(
-      180deg,
-      rgba(37, 51, 74, 0.08),
-      rgba(37, 51, 74, 0.08) 1px,
-      transparent 1px,
-      transparent 34px
-    );
-    background-size: 100% 34px;
-  }
-
-  .cta-banner {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .cta-banner h3 {
-    margin: 0;
-  }
-
-  .cta-eyebrow {
-    color: #2f2f2f;
-  }
-
-  .contact__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .form {
-    padding: 1.25rem;
-    border-radius: var(--radius);
-  }
-
-  .form label {
-    display: block;
-    font-weight: 600;
-    color: rgba(38, 33, 28, 0.8);
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-  }
-
-  .form input,
-  .form textarea {
-    width: 100%;
-    padding: 0.7rem 0.9rem;
-    margin-top: 0.35rem;
-    border-radius: 12px;
-    border: 1px dashed rgba(37, 51, 74, 0.3);
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
-    transition: border 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .form input:focus,
-  .form textarea:focus {
-    outline: none;
-    border-color: var(--accent-ink);
-    box-shadow: 0 0 0 4px rgba(37, 51, 74, 0.07);
-  }
-
-  .form .btn {
-    margin-top: 0.5rem;
-    width: 100%;
-    border-color: transparent;
-  }
-
-  .privacy {
-    font-size: 0.9rem;
-    color: rgba(38, 33, 28, 0.6);
-    margin-top: 0.5rem;
-  }
-
-  .contact__details ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
-  }
-
-  .contact__details li + li {
-    margin-top: 0.4rem;
-  }
-
-  .handnote {
-    font-family: 'Cormorant Garamond', serif;
-    color: rgba(38, 33, 28, 0.75);
-    font-size: 1.05rem;
-    margin: 0;
-  }
-
-  .about .panel__header {
-    max-width: 860px;
-  }
-
-  .about__profiles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    align-items: stretch;
-  }
-
-  .profile {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 1rem;
-    align-items: start;
-  }
-
-  .profile__photo {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    filter: grayscale(1);
-    border: 1px dashed var(--stroke);
-    background: #f8f5ef;
-  }
-
-  .profile__content h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .profile__content p {
-    margin: 0;
-    color: rgba(38, 33, 28, 0.78);
-  }
-
-  .mb-small {
-    margin-bottom: 0.5em;
-  }
-
-  .hero__logo {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid rgba(248, 243, 235, 0.9);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-  }
-
-  @media (max-width: 720px) {
-    .hero__overlay {
-      padding: 3rem 1.75rem;
-    }
-
-    .hero {
-      min-height: 56vh;
-    }
-
-    .hero__logo {
-      width: 120px;
-      height: 120px;
-      bottom: 1.5rem;
-      right: 1.5rem;
-    }
-
-    .cta-banner {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .profile {
-      grid-template-columns: 1fr;
-    }
-
-    .profile__photo {
-      width: 100px;
-      height: 100px;
-    }
-
-    .about__profiles {
-      grid-template-columns: 1fr;
-      gap: 0.75rem;
-    }
-
-  }
-
-  @media (max-width: 480px) {
-    .hero__logo {
-      display: none;
-    }
-  }
-</style>
+      </div>
+    </div>
+  </section>
+</MainLayout>
