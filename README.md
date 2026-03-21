@@ -1,6 +1,6 @@
-# The Medicality Homepage
+# Medicality Consultants Homepage
 
-This repository contains the Astro-powered marketing homepage for The Medicality. It is a single-page site focused on presenting the brand, not a blog or content hub.
+This repository contains the Astro-powered marketing homepage for Medicality Consultants. It is a single-page site focused on presenting the brand, not a blog or content hub.
 
 ## Development
 
