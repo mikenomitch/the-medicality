@@ -1,11 +1,135 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import {
+  CONTACT_ADDRESS_COUNTRY,
+  CONTACT_ADDRESS_LOCALITY,
+  CONTACT_ADDRESS_REGION,
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  CONTACT_POSTAL_CODE,
+  CONTACT_STREET_ADDRESS,
+  HOME_TITLE,
+  SITE_DESCRIPTION,
+  SITE_LOGO,
+  SITE_OG_IMAGE,
+  SITE_OG_IMAGE_ALT,
+  SITE_OG_IMAGE_HEIGHT,
+  SITE_OG_IMAGE_WIDTH,
+  SITE_TITLE,
+  SITE_URL,
+} from "../consts";
+
+const organizationId = `${SITE_URL}/#organization`;
+const websiteId = `${SITE_URL}/#website`;
+const webpageId = `${SITE_URL}/#webpage`;
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": websiteId,
+    url: SITE_URL,
+    name: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    inLanguage: "en-US",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": organizationId,
+    name: SITE_TITLE,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    image: new URL(SITE_OG_IMAGE, SITE_URL).toString(),
+    logo: new URL(SITE_LOGO, SITE_URL).toString(),
+    email: CONTACT_EMAIL,
+    telephone: CONTACT_PHONE,
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: CONTACT_STREET_ADDRESS,
+      addressLocality: CONTACT_ADDRESS_LOCALITY,
+      addressRegion: CONTACT_ADDRESS_REGION,
+      postalCode: CONTACT_POSTAL_CODE,
+      addressCountry: CONTACT_ADDRESS_COUNTRY,
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: CONTACT_EMAIL,
+        telephone: CONTACT_PHONE,
+      },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Healthcare hospitality consulting services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Five-star service standards consulting",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Patient experience transformation",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Hospital service culture consulting",
+          },
+        },
+      ],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": webpageId,
+    url: SITE_URL,
+    name: HOME_TITLE,
+    description: SITE_DESCRIPTION,
+    isPartOf: {
+      "@id": websiteId,
+    },
+    about: {
+      "@id": organizationId,
+    },
+  },
+];
 ---
 
-<MainLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<MainLayout
+  title={HOME_TITLE}
+  description={SITE_DESCRIPTION}
+  image={SITE_OG_IMAGE}
+  imageAlt={SITE_OG_IMAGE_ALT}
+  imageWidth={SITE_OG_IMAGE_WIDTH}
+  imageHeight={SITE_OG_IMAGE_HEIGHT}
+  structuredData={structuredData}
+>
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero__media" role="presentation" aria-hidden="true"></div>
+    <img
+      src={SITE_OG_IMAGE}
+      alt=""
+      class="hero__media"
+      width={SITE_OG_IMAGE_WIDTH}
+      height={SITE_OG_IMAGE_HEIGHT}
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="hero__media-tint" aria-hidden="true"></div>
     <div class="hero__overlay">
       <p class="eyebrow eyebrow--light">Concierge-Caliber Healthcare</p>
       <h1 id="hero-title">Healthcare meets Five-Star Hospitality</h1>
@@ -20,10 +144,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </div>
     </div>
     <img
-      src="/logo2.png"
+      src="/logo2-hero.webp"
       alt="Medicality Consultants logo"
       class="hero__logo"
-      loading="lazy"
+      width="400"
+      height="400"
+      loading="eager"
       decoding="async"
     />
   </section>
@@ -99,8 +225,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <article class="card sketch profile" role="listitem">
         <img
           class="profile__photo"
-          src="/jim.png"
+          src="/jim.webp"
           alt="Portrait of Jim Treadway"
+          width="756"
+          height="695"
           loading="lazy"
           decoding="async"
         />
@@ -117,8 +245,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <article class="card sketch profile" role="listitem">
         <img
           class="profile__photo"
-          src="https://news.feinberg.northwestern.edu/wp-content/uploads/2015/04/Michel-Kliot_150.jpg"
+          src="/michel.webp"
           alt="Portrait of Michel Kliot"
+          width="934"
+          height="1086"
           loading="lazy"
           decoding="async"
         />
@@ -136,8 +266,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <article class="card sketch profile" role="listitem">
         <img
           class="profile__photo"
-          src="/kamal.png"
+          src="/kamal.webp"
           alt="Portrait of Kamal Singh"
+          width="854"
+          height="1100"
           loading="lazy"
           decoding="async"
         />
@@ -154,8 +286,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <article class="card sketch profile" role="listitem">
         <img
           class="profile__photo"
-          src="/gerald.png"
+          src="/gerald.webp"
           alt="Portrait of Gerald Grant"
+          width="852"
+          height="1090"
           loading="lazy"
           decoding="async"
         />
