@@ -455,6 +455,7 @@ nav a:hover {
 .approach-sublist {
   padding-left: 1.1rem;
   margin-top: 0.4rem;
+  list-style-type: upper-alpha;
   display: grid;
   gap: 0.4rem;
 }
