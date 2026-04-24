@@ -3,12 +3,6 @@
   "compatibility_date": "2025-10-08",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
-  "routes": [
-    {
-      "pattern": "medicalityconsultants.com",
-      "custom_domain": true
-    }
-  ],
   "assets": {
     "directory": "./dist"
   }
