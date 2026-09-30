@@ -1,9 +1,9 @@
 {
   "name": "medicality-consultants",
   "compatibility_date": "2025-10-08",
-  "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
   "assets": {
-    "directory": "./dist"
+    "directory": "./public",
+    "not_found_handling": "404-page"
   }
 }

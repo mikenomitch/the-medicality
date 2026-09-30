@@ -1,0 +1,8 @@
+{
+  "name": "Medicality Consultants",
+  "short_name": "Medicality",
+  "icons": [{ "src": "/logo-icon.png", "sizes": "512x512", "type": "image/png" }],
+  "theme_color": "#14213a",
+  "background_color": "#fcfaf6",
+  "display": "browser"
+}

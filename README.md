@@ -1,46 +1,11 @@
-# Medicality Consultants Homepage
+# The Medicality
 
-This repository contains the Astro-powered marketing homepage for Medicality Consultants. It is a single-page site focused on presenting the brand, not a blog or content hub.
+Static site for https://medicalityconsultants.com.
 
-## Development
+The site lives in `public/` as plain HTML with inline CSS and JS; there is no build step.
+Cloudflare Workers serves that folder as static assets (see `wrangler.json`) and deploys on every push to `main`.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the local development server:
-   ```bash
-   npm run dev
-   ```
-   The site will be available at `http://localhost:4321`.
-3. Make updates to components under `src/` and static assets in `public/`. Changes will hot-reload in the browser.
+- `npm run dev` previews locally with Wrangler
+- `npm run deploy` deploys manually
 
-## Deployment
-
-The site is deployed to Cloudflare Workers/Pages as a static build.
-
-1. Build the production assets:
-   ```bash
-   npm run build
-   ```
-2. Preview the build locally if needed:
-   ```bash
-   npm run preview
-   ```
-3. Deploy using Wrangler:
-   ```bash
-   npm run deploy
-   ```
-   Ensure your Cloudflare credentials are configured and the `wrangler.json` file is set up for the correct account and project.
-
-## Project Structure
-
-- `src/pages/` contains the Astro pages exposed as routes.
-- `src/components/` holds shared UI components.
-- `public/` stores static assets like images and icons.
-- `astro.config.mjs` and `tsconfig.json` define project configuration.
-
-## Additional Resources
-
-- [Astro documentation](https://docs.astro.build/)
-- [Cloudflare Workers static assets](https://developers.cloudflare.com/workers/static-assets/)
+The founder video is hosted on Cloudflare R2 and the contact form is a JotForm embed; neither is in this repo.
